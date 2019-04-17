@@ -18,8 +18,8 @@
           <p>Get the latest news on how your code is doing right in your inbox!</p>
       </div>
 
-      <fieldset class="contact">
-        <form action="index.html" method="post">
+      <form action="index.html" method="post">
+        <fieldset class="contact">
           <span class="contact"></span>
           <h2>Contact Information</h2>
 
@@ -110,23 +110,21 @@
                 <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="user_zip">
               </div>
-
-              </form>
           </fieldset>
-          
+
         <fieldset>
           <legend><span class="newsletter"></span></legend>
           <div class="newsletter">
             <h3>Newsletter</h3>
               <label>Select the newsletters you would like to receive.</label><br>
-              <input type="checkbox" name="htmlNews" value="html"><label>HTML News</label>
-              <input type="checkbox" name="cssNews" value="css"><label>CSS News</label>
-              <input type="checkbox" name="JavascriptNews" value="javascript"><label>Javascript News</label><br>
+              <input type="checkbox" name="News" value="html"><label for="html">HTML News</label>
+              <input type="checkbox" name="News" value="css"><label for="css">CSS News</label>
+              <input type="checkbox" name="News" value="javascript"><label>Javascript News</label><br>
 
             <label>Newsletter format:</label><br>
-              <input type="radio" id="html" value="HTML" name="HTML">
+              <input type="radio" id="html" value="HTML" name="format">
               <label for="html">HTML</label>
-              <input type="radio" id="plainText" value="plain_text" name="plain_text">
+              <input type="radio" id="plainText" value="plain_text" name="format">
               <label for="plainText">Plain Text</label>
           </div>
 
@@ -134,8 +132,9 @@
               <textarea id="comment" name="user_comment"></textarea>
               <button type="submit" name="submit">Sign Up</button>
           </fieldset>
-
+        </form>
           <footer><i>Copyright Audrey Borges</i></footer>
+
   </div>
     </body>
   </html>
