@@ -9,7 +9,7 @@
 body {
   font-family: 'Merriweather', serif;
   line-height: 1.6;
-  width: 70%;
+  width: inherit;
   margin: 0 auto;
 }
 
@@ -36,6 +36,7 @@ h2 {
 
 h3 {
   color: #2d3945;
+  padding-top: 20px;
 }
 
 p {
@@ -56,7 +57,6 @@ fieldset {
 }
 
 legend {
-  margin: 1em 1em 1em 0;
   border-bottom: 1px solid #fff;
   font-size: 1.3em;
   font-weight: bold;
@@ -65,14 +65,18 @@ legend {
 
 label {
   color: #666;
+  padding-left: 8px;
+  padding-top: .5em;
+}
+
+input {
+  padding: 10px;
 }
 
 input,
 textarea,
 select {
   font: 1em;
-  margin-top: 5px;
-  margin-bottom: 15px;
   width: 100%;
   height: 5em;
   background-color: #eff0f1;
@@ -91,9 +95,10 @@ select:focus {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
-  width: 30px;
+  width: 20px;
   margin: 0;
   vertical-align: middle;
+  position: relative;
 }
 
 button {
@@ -134,10 +139,7 @@ footer {
 
 .contact {
   border-bottom: 2px solid #2d3945;
-}
-
-.contact label {
-  margin-bottom: 10px;
+  color: #2d3945;
 }
 
 .contact input {
@@ -145,15 +147,18 @@ footer {
   margin-bottom: 15px;
 }
 
-.newsletter {
-  margin: 0 auto;
+.newsletter p {
   color: #666;
+  border: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 /* ---- ID Selectors ---- */
 
 #name::placeholder,
-#email::placeholder {
+#email::placeholder,
+#phone::placeholder {
   text-align: right;
   font-style: italic;
   color: gray;
@@ -196,6 +201,7 @@ footer {
   }
 
   #zip {
+    margin-top: 1em;
     max-width: 25%;
   }
 
