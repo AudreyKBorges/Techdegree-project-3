@@ -20,7 +20,7 @@
 
       <form action="index.html" method="post">
         <fieldset class="contact">
-          <h2>Contact Information</h2>
+          <legend>Contact Information</legend>
 
             <div class="inner-flex">
               <label for="name">Full Name</label>
@@ -113,14 +113,14 @@
           </fieldset>
 
         <fieldset>
-          <legend><h3>Newsletter</h3></legend>
+          <legend>Newsletter</legend>
           <div class="newsletter">
               <p>Select the newsletters you would like to receive.</p>
-            <input type="checkbox" name="News" value="html"><label>HTML News</label><br>
-            <input type="checkbox" name="News" value="css"><label>CSS News</label><br>
-            <input type="checkbox" name="News" value="javascript"><label>Javascript News</label>
+           <input type="checkbox" name="news" id="news" value="news"><label for="news">HTML News</label><br>
+           <input type="checkbox" name="news" id="css" value="css"><label for="css">CSS News</label><br>
+           <input type="checkbox" name="news" id="javascript" value="javascript"><label for="javascript">Javascript News</label>
 
-            <p>Newsletter format:</p><br>
+              <p>Newsletter format:</p><br>
                 <input type="radio" id="html" value="HTML" name="format"><label for="html">HTML</label><br>
                 <input type="radio" id="plainText" value="plain_text" name="format"><label for="plainText">Plain Text</label>
 
